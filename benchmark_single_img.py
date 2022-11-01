@@ -19,6 +19,4 @@ with torch.no_grad():
 print(f"# BENCHMARK (SINGLE IMG) [{time_elapsed * 1000:.3f}ms]")
 
 # SHOW IMG
-cv2.imshow("SR_IMG", sr_ndarray)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+cv2.imwrite("output.jpg", sr_ndarray)
